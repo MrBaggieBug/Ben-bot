@@ -1,7 +1,9 @@
 /* eslint-disable no-empty */
 /* eslint-disable no-unused-vars */
 const moment = require('moment');
+const config = require('../config.json')
 
+const lengthOfPrefix = config.prefix.length
 
 module.exports = {
     name: 'ben',
@@ -32,7 +34,7 @@ module.exports = {
         //the incoming message is just "yo ben"
         //and its response to that should always be Ben
 
-        if (mString.length === 6) {
+        if (mString.length === lengthOfPrefix + 3) {
             //default response to yo ben
 
             message.reply(`${BenEmotes.ben} Ben.`)
@@ -54,7 +56,7 @@ module.exports = {
         else {
 
             //random 1 to 10 number generator
-            let r = Math.floor(Math.random() * 10) + 1;
+            let r = Math.random(1, 10)
             console.log(`[${time}] ${r}`)
 
             switch (true) {

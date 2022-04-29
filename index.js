@@ -45,7 +45,6 @@ poster.on('posted', (stats) => { // ran when succesfully posted
   console.log(`Posted stats to Top.gg | ${stats.serverCount} servers`)
 })
 
-
 // ... gets member count
 let getMemberCount = () => {
   return client.client.guilds.cache.map(g => g.memberCount).reduce((a, b) => a + b);
