@@ -56,7 +56,7 @@ module.exports = {
         else {
 
             //random 1 to 10 number generator
-            let r = Math.random(1, 10)
+            let r = Math.floor(Math.random() * 10) + 1;
             console.log(`[${time}] ${r}`)
 
             switch (true) {
