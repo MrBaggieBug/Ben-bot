@@ -68,7 +68,7 @@ async function bootstrap() {
 
   //when mfs add the bot to their server
   client.registerEvent('guildCreate', () => {
-    console.log(`[${time}] Some mf really added this mf to their server 💀 [${/*client.client.guilds.cache.size*/}] [${getMemberCount()}]`);
+    //console.log(`[${time}] Some mf really added this mf to their server 💀 [${/*client.client.guilds.cache.size*/}] [${getMemberCount()}]`);
 
   });
 
