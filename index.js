@@ -61,21 +61,21 @@ async function bootstrap() {
     console.log(`[${time}] Ready!`);
     client.client.user.setActivity(`Use "yo lab" and mix potions!!!! \n Committing demonic acts of Sin for mfs`)
 
-    console.log(`serving ${client.client.guilds.cache.size} mfs [${getMemberCount()}]`)
-    
+    //console.log(`serving ${client.client.guilds.cache.size} mfs [${getMemberCount()}]`)
+
 
   });
 
   //when mfs add the bot to their server
   client.registerEvent('guildCreate', () => {
-    console.log(`[${time}] Some mf really added this mf to their server 💀 [${client.client.guilds.cache.size}] [${getMemberCount()}]`);
+    console.log(`[${time}] Some mf really added this mf to their server 💀 [${/*client.client.guilds.cache.size*/}] [${getMemberCount()}]`);
 
   });
 
   //when bozos kick ben
   client.registerEvent('guildDelete', () => {
-    console.log(`[${time}] Kicked didnt ask [${client.client.guilds.cache.size}]`);
-
+    console.log(`[${time}] Kicked didnt ask []`);
+    //${/*client.client.guilds.cache.size*/ }
   });
 
 
