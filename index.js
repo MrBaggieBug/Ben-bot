@@ -39,16 +39,16 @@ commandsModule.loadFromDirectory(join(__dirname, 'commands'));
 
 
 // sends server count to top.gg
-// const poster = AutoPoster(config.topggToken, client.client)
+const poster = AutoPoster(config.topggToken, client.client)
 
-// poster.on('posted', (stats) => { // ran when succesfully posted
-//   console.log(`Posted stats to Top.gg | ${stats.serverCount} servers`)
-// })
+poster.on('posted', (stats) => { // ran when succesfully posted
+  console.log(`Posted stats to Top.gg | ${stats.serverCount} servers`)
+})
 
-// // ... gets member count
-// let getMemberCount = () => {
-//   return client.client.guilds.cache.map(g => g.memberCount).reduce((a, b) => a + b);
-// }
+// ... gets member count
+let getMemberCount = () => {
+  return client.client.guilds.cache.map(g => g.memberCount).reduce((a, b) => a + b);
+}
 
 async function bootstrap() {
   await client.registerModule('commands', commandsModule);
