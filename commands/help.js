@@ -35,7 +35,7 @@ const row = new MessageActionRow()
             .setStyle('PRIMARY')
             .setLabel('Very dark Ben twitter account')
             .setURL('https://twitter.com/discordingben')
-            .setEmoji('<:Twitter:871910111763914833>')
+
             .setStyle('LINK'),
 
 
@@ -54,7 +54,7 @@ const row = new MessageActionRow()
     )
 
 module.exports = {
-    name: 'helps',
+    name: 'help',
     description: 'send help',
     cooldown: 5,
     async execute(message) {
