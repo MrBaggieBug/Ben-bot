@@ -54,7 +54,7 @@ const row = new MessageActionRow()
     )
 
 module.exports = {
-    name: 'help',
+    name: 'helps',
     description: 'send help',
     cooldown: 5,
     async execute(message) {
