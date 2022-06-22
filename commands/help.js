@@ -35,7 +35,7 @@ const row = new MessageActionRow()
             .setStyle('PRIMARY')
             .setLabel('Very dark Ben twitter account')
             .setURL('https://twitter.com/discordingben')
-            .setEmoji('<:Twitter:871910111763914833>')
+
             .setStyle('LINK'),
 
 
